@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9F21F19C226AD97300F5AEC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F19B226AD97300F5AEC8 /* AppDelegate.swift */; };
-		9F21F19E226AD97300F5AEC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F19D226AD97300F5AEC8 /* ViewController.swift */; };
+		9F21F19E226AD97300F5AEC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F19D226AD97300F5AEC8 /* MainViewController.swift */; };
 		9F21F1A1226AD97300F5AEC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F21F19F226AD97300F5AEC8 /* Main.storyboard */; };
 		9F21F1A3226AD97300F5AEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F21F1A2226AD97300F5AEC8 /* Assets.xcassets */; };
 		9F21F1A6226AD97300F5AEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F21F1A4226AD97300F5AEC8 /* LaunchScreen.storyboard */; };
 		9F21F1B1226AD97400F5AEC8 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F1B0226AD97400F5AEC8 /* window_shopperTests.swift */; };
 		9F21F1BC226AD97400F5AEC8 /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F1BB226AD97400F5AEC8 /* window_shopperUITests.swift */; };
+		9F21F1CC226ADD5100F5AEC8 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F1CB226ADD5100F5AEC8 /* CurrencyTextField.swift */; };
+		9F21F1CF226AE68500F5AEC8 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F1CE226AE68500F5AEC8 /* Wage.swift */; };
+		9F21F1D0226AE75E00F5AEC8 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21F1CE226AE68500F5AEC8 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		9F21F198226AD97200F5AEC8 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F21F19B226AD97300F5AEC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F21F19D226AD97300F5AEC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F21F19D226AD97300F5AEC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9F21F1A0226AD97300F5AEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F21F1A2226AD97300F5AEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F21F1A5226AD97300F5AEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		9F21F1B7226AD97400F5AEC8 /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F21F1BB226AD97400F5AEC8 /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		9F21F1BD226AD97400F5AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F21F1CB226ADD5100F5AEC8 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		9F21F1CE226AE68500F5AEC8 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +102,10 @@
 		9F21F19A226AD97200F5AEC8 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				9F21F1CD226AE66600F5AEC8 /* Model */,
+				9F21F1CA226ADD2000F5AEC8 /* Views */,
+				9F21F1C9226ADB9E00F5AEC8 /* Controller */,
 				9F21F19B226AD97300F5AEC8 /* AppDelegate.swift */,
-				9F21F19D226AD97300F5AEC8 /* ViewController.swift */,
 				9F21F19F226AD97300F5AEC8 /* Main.storyboard */,
 				9F21F1A2226AD97300F5AEC8 /* Assets.xcassets */,
 				9F21F1A4226AD97300F5AEC8 /* LaunchScreen.storyboard */,
@@ -123,6 +130,30 @@
 				9F21F1BD226AD97400F5AEC8 /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		9F21F1C9226ADB9E00F5AEC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F21F19D226AD97300F5AEC8 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F21F1CA226ADD2000F5AEC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F21F1CB226ADD5100F5AEC8 /* CurrencyTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F21F1CD226AE66600F5AEC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F21F1CE226AE68500F5AEC8 /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F21F19E226AD97300F5AEC8 /* ViewController.swift in Sources */,
+				9F21F1CC226ADD5100F5AEC8 /* CurrencyTextField.swift in Sources */,
+				9F21F1CF226AE68500F5AEC8 /* Wage.swift in Sources */,
+				9F21F19E226AD97300F5AEC8 /* MainViewController.swift in Sources */,
 				9F21F19C226AD97300F5AEC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F21F1B1226AD97400F5AEC8 /* window_shopperTests.swift in Sources */,
+				9F21F1D0226AE75E00F5AEC8 /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
